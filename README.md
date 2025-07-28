@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# cloudrun-progression
+=======
+>>>>>>> 7d6fda5 (updated)
 # Canary Deployments with Cloud Run and Cloud Build
 
 This document shows you how to implement a deployment pipeline for
@@ -403,3 +409,7 @@ production traffic.
     ```sh 
     gcloud run services update-traffic  ${_SERVICE_NAME} --to-revisions=$${NEW_PROD}=100  --platform managed  --region ${_REGION}
     ```
+<<<<<<< HEAD
+=======
+>>>>>>> 74ade30 (initial commit)
+>>>>>>> 7d6fda5 (updated)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Copyright 2021 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,6 +13,39 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+=======
+<<<<<<< HEAD
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/qwiklabs-gcp-00-538cd3b6c5f9/hello-cloudrun:$SHORT_SHA', '.']
+
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args:
+  - run
+  - deploy
+  - hello-cloudrun
+  - --image=gcr.io/qwiklabs-gcp-00-538cd3b6c5f9/hello-cloudrun:$SHORT_SHA
+  - --region=us-east1
+  - --platform=managed
+  - --allow-unauthenticated
+  - --tag=$BRANCH_NAME
+=======
+# Copyright 2021 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+>>>>>>> 7d6fda5 (updated)
 # Default Values
 substitutions:
   _SERVICE_NAME: hello-cloudrun
@@ -45,3 +79,7 @@ steps:
 
 options:
   logging: CLOUD_LOGGING_ONLY
+<<<<<<< HEAD
+=======
+>>>>>>> 74ade30 (initial commit)
+>>>>>>> 7d6fda5 (updated)
