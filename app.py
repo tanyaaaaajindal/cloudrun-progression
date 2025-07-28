@@ -22,10 +22,14 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
 <<<<<<< HEAD
+<<<<<<< HEAD
     return 'Hello World v1.1'
 =======
     return 'Hello World v1.1'
 >>>>>>> 7d6fda5 (updated)
+=======
+    return 'Hello World v1.1'
+>>>>>>> 665908b (updated)
 
 if __name__ == "__main__":
-    app.run(debug=True,host='0.0.0.0',port=int(os.environ.get('PORT', 8080)))
+    app.run(debug=True,host='0.0.0.0',port=int(os.environ.get('PORT', 8080))))
